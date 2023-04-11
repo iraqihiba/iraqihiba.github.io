@@ -50,15 +50,13 @@
                     - ANOVA
                     - Descriptive Statistics:
                         - Code:
-                            - ```
-                            - import excel "C:\Users\Hiba Iraqi\Desktop\Project\data.xlsx", sheet("Sheet1") firstrow
+                            - ```import excel "C:\Users\Hiba Iraqi\Desktop\Project\data.xlsx", sheet("Sheet1") firstrow
 graph box Scale, over(Smile) title("Box Plot of the values of leniency for each type of smile")
 graph bar (count), over (Smile) title("Frequency of each smile in the dataset")
 graph bar (count), over(Scale) title("Bar_Plot Distribution of leniency ratings")
 graph bar (mean) Scale, over (Smile) title("Means of leniency according to the type of smile")
 ssc install vioplot, replace
 vioplot Scale, over (Smile) title("Violin Plot of Leniency Ratings By Type of Smile")```
-
                         - Box Plot
                         - Barplot
                         - Violin Plot
