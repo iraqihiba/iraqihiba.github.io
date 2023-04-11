@@ -4,7 +4,7 @@
 
 ### Latest Projects: 
 
-[Project 1 Title](/sample_page)
+[Statistical Evaluation of The Contribution Of Smiling In Increasing Clemency ](/sample_page)
 <img src="images/dummy_thumbnail1.jpg?raw=true"/>
 
 ---
