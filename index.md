@@ -5,7 +5,7 @@
 ### Latest Projects: 
 
 [Statistical Evaluation of The Contribution Of Smiling In Increasing Clemency English version](/project)
-<br>
+<br> <br>
 [Évaluation statistique de la contribution d'un visage souriant à l'augmentation de la clémence accordée à un accusé. Version en français](/projectfr)
 <img src="images/dummy_thumbnail2.jpg?raw=true"/>
 
