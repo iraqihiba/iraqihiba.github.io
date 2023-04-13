@@ -3,13 +3,12 @@
 ---
 
 ### Latest Projects: 
-<pre>
-[Statistical Evaluation of The Contribution Of Smiling In Increasing Clemency English version](/project)
 
+[Statistical Evaluation of The Contribution Of Smiling In Increasing Clemency English version](/project)
+<br>
 [Évaluation statistique de la contribution d'un visage souriant à l'augmentation de la clémence accordée à un accusé. Version en français](/projectfr)
 <img src="images/dummy_thumbnail2.jpg?raw=true"/>
 
-</pre>
 
 ---
 [Future Projects Coming...](/pdf/sample_presentation.pdf)
