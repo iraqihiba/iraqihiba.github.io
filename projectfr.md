@@ -1,13 +1,13 @@
 # Évaluation statistique de l'impact du type de sourire accompagnant le dossier d'un fraudeur sur le degré de clémence qu'on lui accorde 
 *Utilisation de Pandas, Stata et R*
-## Defining the research questions and objectives:
-Le sourire augmente-t-il vraiment la clémence accordée ?
+## Définition des question auxquelles répondre ainsi que les objectifs de cette étude
+Sourire augmente-t-il vraiment la clémence accordée ?
 
 Les différents types de sourires ont-ils une efficacité différente ?
 ## Identification des sources de données et des méthodes de collecte:
 [Why Smiles Generate Leniency](https://journals.sagepub.com/doi/10.1177/0146167295213002)
 
-136 étudiants ont joué le rôle d'un membre d'un comité disciplinaire d'un établissement d'enseignement supérieur chargé d'examiner un éventuel cas de mauvaise conduite (triche).
+136 étudiants ont joué le rôle d'un membre d'un comité disciplinaire d'un établissement d'enseignement supérieur chargé d'examiner un éventuel cas de mauvaise conduite (fraude).
 
 On a montré à une même proportion de la population le dossier de l'accusé accompagné soit d'une photo d'un sourire misérable, neutre, faux ou ressenti.
 
