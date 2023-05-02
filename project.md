@@ -1,4 +1,4 @@
-# Statistical Evaluation of The Contribution Of Smiling In Increasing Clemency 
+# Statistical Evaluation of The Contribution Of Smiling In Increasing Clemency shown to fraudsters
 *Using Pandas,Stata &R*
 ## Defining the research questions and objectives:
 Does smiling really increase leniency?
