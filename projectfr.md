@@ -1,4 +1,4 @@
-# Évaluation statistique de la contribution d'un visage souriant à l'augmentation de la clémence accordée à un accusé. 
+# Évaluation statistique de l'impact du type de sourire accompagnant le dossier d'un fraudeur sur le degré de clémence qu'on lui accorde 
 *Utilisation de Pandas, Stata et R*
 ## Defining the research questions and objectives:
 Le sourire augmente-t-il vraiment la clémence accordée ?
