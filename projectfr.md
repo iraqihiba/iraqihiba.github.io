@@ -1,6 +1,6 @@
 # Évaluation statistique de l'impact du type de sourire accompagnant le dossier d'un fraudeur sur le degré de clémence qu'on lui accorde 
 *Utilisation de Pandas, Stata et R*
-## Définition des question auxquelles répondre ainsi que les objectifs de cette étude
+## Définition des question auxquelles répondre ainsi que les objectifs
 Sourire augmente-t-il vraiment la clémence accordée ?
 
 Les différents types de sourires ont-ils une efficacité différente ?
