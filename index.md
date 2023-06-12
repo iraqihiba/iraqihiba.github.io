@@ -11,11 +11,11 @@
 
 
 ---
-[Future Projects Coming...](/pdf/sample_presentation.pdf)
+[CV](/pdf/CV-Website-FR.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Future Projects Coming...](http://example.com/)
+[Resume](/pdf/CV-Website-ENG.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 
