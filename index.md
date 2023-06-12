@@ -11,11 +11,11 @@
 
 
 ---
-[CV](/pdf/CV-Website-FR.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[CV: ](/pdf/CV-Website-FR.pdf)
+<img src="images/Website-CV-FR.png?raw=true"/>
 
 ---
-[Resume](/pdf/CV-Website-ENG.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Resume: ](/pdf/CV-Website-ENG.pdf)
+<img src="images/Website-CV-ENG.png?raw=true"/>
 
 
