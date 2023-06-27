@@ -9,6 +9,8 @@
 [**Version française**: Évaluation statistique de l’impact du type de sourire accompagnant le dossier d’un fraudeur sur le degré de clémence qu’on lui accorde](/projectfr)
 <img src="images/dummy_thumbnail2.jpg?raw=true"/>
 
+[**Storing_data](/pdf/london_weather_filled.csv)
+
 
 ---
 [CV: ](/pdf/CV-Website-FR.pdf)
