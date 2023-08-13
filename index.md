@@ -32,3 +32,14 @@
     </div>
 </div>
 
+<div style="display: flex;">
+    <div style="flex: 1; margin-right: 20px;">
+        <img src="images/Website-CV-FR.png?raw=true" alt="CV French" width="300"/>
+        <p align="center"><em>CV French</em></p>
+    </div>
+    <div style="flex: 1;">
+        <img src="images/Website-CV-ENG.png?raw=true" alt="CV English" width="300"/>
+        <p align="center"><em>CV English</em></p>
+    </div>
+</div>
+
