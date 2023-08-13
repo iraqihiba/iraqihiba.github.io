@@ -12,7 +12,7 @@
 [**Storing_data](/pdf/london_weather_filled.csv)
 
 [ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
-
+<img src="images/MovEase.jpeg">
 
 ---
 [CV: ](/pdf/CV-Website-FR.pdf)
