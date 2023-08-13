@@ -19,18 +19,16 @@
 [CV: ](/pdf/CV-Website-FR.pdf)
 <img src="images/Website-CV-FR.png?raw=true"/>
 
----
-[Resume: ](/pdf/CV-Website-ENG.pdf)
-<img src="images/Website-CV-ENG.png?raw=true"/>
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
-        [CV: ](/pdf/CV-Website-FR.pdf)<br>
+<div style="display: flex;">
+    <div style="flex: 1; margin-right: 20px;">
+        [CV: ](/pdf/CV-Website-FR.pdf)
+        <br>
         <img src="images/Website-CV-FR.png?raw=true" alt="CV French" width="300"/>
     </div>
     <div style="flex: 1;">
-        [Resume: ](/pdf/CV-Website-ENG.pdf)<br>
+        [Resume: ](/pdf/CV-Website-ENG.pdf)
+        <br>
         <img src="images/Website-CV-ENG.png?raw=true" alt="CV English" width="300"/>
     </div>
 </div>
-
 
