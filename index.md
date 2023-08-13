@@ -11,8 +11,7 @@
 
 [**Storing_data](/pdf/london_weather_filled.csv)
 
-[ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
-<img src="images/MovEase.jpeg">
+[Download ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
 [![ALX Team Pitch Presentation](images/MovEase.jpeg)](https://drive.google.com/file/d/10qB6yfE4uL8PUm7nnV0ijZ7mkOcrxVMa/view?usp=sharing)
 
 
