@@ -8,7 +8,7 @@
 <br> <br>
 [**Version française**: Évaluation statistique de l’impact du type de sourire accompagnant le dossier d’un fraudeur sur le degré de clémence qu’on lui accorde](/projectfr)
 <img src="images/dummy_thumbnail2.jpg?raw=true"/>
-
+[Blaank space]
 
 [Download ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
 [![ALX Team Pitch Presentation](images/MovEase.jpeg)](https://drive.google.com/file/d/10qB6yfE4uL8PUm7nnV0ijZ7mkOcrxVMa/view?usp=sharing)
@@ -16,7 +16,7 @@
 
 [![MovEase Pitch](https://img.youtube.com/vi/GuFaFvW2A0c/0.jpg)](https://www.youtube.com/watch?v=GuFaFvW2A0c)
 ---
-
+[Blank]
 
 <div style="display: flex;">
     <div style="flex: 1; margin-right: 20px;">
