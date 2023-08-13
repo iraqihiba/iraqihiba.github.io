@@ -14,6 +14,7 @@
 [ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
 <img src="images/MovEase.jpeg">
 
+[![MovEase Pitch](https://img.youtube.com/vi/GuFaFvW2A0c/0.jpg)](https://www.youtube.com/watch?v=GuFaFvW2A0c)
 ---
 [CV: ](/pdf/CV-Website-FR.pdf)
 <img src="images/Website-CV-FR.png?raw=true"/>
