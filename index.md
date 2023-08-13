@@ -9,7 +9,6 @@
 [**Version française**: Évaluation statistique de l’impact du type de sourire accompagnant le dossier d’un fraudeur sur le degré de clémence qu’on lui accorde](/projectfr)
 <img src="images/dummy_thumbnail2.jpg?raw=true"/>
 
-[**Storing_data](/pdf/london_weather_filled.csv)
 
 [Download ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
 [![ALX Team Pitch Presentation](images/MovEase.jpeg)](https://drive.google.com/file/d/10qB6yfE4uL8PUm7nnV0ijZ7mkOcrxVMa/view?usp=sharing)
@@ -23,5 +22,15 @@
 ---
 [Resume: ](/pdf/CV-Website-ENG.pdf)
 <img src="images/Website-CV-ENG.png?raw=true"/>
+<div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+        [CV: ](/pdf/CV-Website-FR.pdf)<br>
+        <img src="images/Website-CV-FR.png?raw=true" alt="CV French" width="300"/>
+    </div>
+    <div style="flex: 1;">
+        [Resume: ](/pdf/CV-Website-ENG.pdf)<br>
+        <img src="images/Website-CV-ENG.png?raw=true" alt="CV English" width="300"/>
+    </div>
+</div>
 
 
