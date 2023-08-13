@@ -14,7 +14,12 @@
 
 
 
-### ALX
+
+
+
+
+
+### ALX Foundations:
 
 
 [Download ALX Team Pitch Presentation](/pdf/MovEase_Presentation.pdf)
@@ -26,6 +31,11 @@
 
 
 
+
+
+
+
+### Aspiring professional resume:
 
 <div style="display: flex;">
     <div style="flex: 1; margin-right: 20px;">
