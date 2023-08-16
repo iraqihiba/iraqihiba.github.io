@@ -9,7 +9,7 @@
 [**English version**: Statistical Evaluation of the impact of the type of smile appearing in a fraudster's file on leniency](/project)
 <br> <br>
 [**Version française**: Évaluation statistique de l’impact du type de sourire accompagnant le dossier d’un fraudeur sur le degré de clémence qu’on lui accorde](/projectfr)
-<img src="images/dummy_thumbnail5.png?raw=true"/>
+<img src="images/dummy_thumbnail6.png?raw=true"/>
 
 
 
