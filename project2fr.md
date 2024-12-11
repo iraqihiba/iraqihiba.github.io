@@ -66,3 +66,14 @@ Lower bounds : Températures minimales atteintes a partir des températures mo
 Total_rainfall: Précipitations 
 
 On cherche les régions ayant le moins de variabilité en termes d’intervalles de température par saison. On utilise pour cela le coefficient de variation. CV=(Ecart-type /Moyenne​)×100. 
+## Résultats
+### Mesure de l’impact du changement climatique sur le décalage saisonnier  
+L’inter-variabilité entre les années des données climatiques est importante même si on ne se restreint qu’a l’intervalle [1985,2020] et l’on ne s’adonne pas a analyser les années 2021,2022,2023 ou l’évolution est présumée bi-saisonnière. 
+
+Reproductibilité des résultats : J’ai entamé une série de tests pour vérifier si l’étendue temporelle des données influence la détection des différentes phases que traversent les données climatiques. On rappelle qu’a chaque itération, l'emplacement d'un nouveau point de changement est estimé de manière à diviser un segment existant. Par conséquent, la progression de cette méthode peut être schématisée sous la forme d'un arbre binaire. Il est possible si l’on diminue l’étendue temporelle, par exemple de 2 ans a 1 an que les résultats ne soient plus les mêmes. 
+
+Fort heureusement, les résultats de détection au bout d’un an et de deux ans et plus sont les mêmes. Ceci aurait été un problème non négligeable car la complexité de notre méthode n’est pas linéaire. C’est-à-dire qu’au fur et à mesure qu’on augmente les observations, le temps de traitement n’augmente pas avec la même proportion, il explose. Dans notre cas, la complexité de calcul est O(kT^2), où k est le nombre de points de changement estimés et T le nombre d'observations. On suppose que k est constant et ne varie pas beaucoup au cours des ans. Ce qui est vérifié dans le cas de nos données. Prenons tr le temps de traitement d’un an. Le temps de traitement de [1985,2020] dans notre cas sera de 36*36*tr c-à-d 1296*tr. Ainsi, s’il nous prend 1 minute pour analyser 1 an, 36 ans nous prendra 22 heures. 
+
+Par rapport à la fiabilité : 
+
+En appliquant cette technique aux données de Casablanca-Anfa, on remarque que le nombre de phases dont passe l’évolution des données climatiques reste assez restreinte entre 1985 et 2020.Entre 6 et 8 environ. 2010 est une année aberrante à cause des inondations.
