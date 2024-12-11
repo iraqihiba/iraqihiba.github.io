@@ -72,11 +72,11 @@ Fortunately, the detection results after one and two years and more are the same
 Reliability: 
 
 Applying this technique to the Casablanca-Anfa data, we note that the number of phases through which the evolution of climatic data passes remains fairly limited between 1985 and 2020: between 6 and 8 approximately. 2010 is an aberrant year due to flooding.
-Number of exchange points per year](images//numberofchangepointsperyear.png) Source: Author
+![Number of change points per year](images/numberofchangepointsperyear.png) Source: Author
 #### How the tool works: data
 We insert the raw climatic data from the MND, and the path to the folder where we want to store the images in the automation_of_plots function. 
 And here's the result: analysis over the years becomes easier. 
-edivisive plots through the years of a region](images/plotwithedivisive.png)
+![edivisive plots through the years of a region](images/plotwithedivisive.png)
 Source: Author
 Here's a snapshot of 1985. Blue=Winter Green=Spring Red=Summer Orange=Autumn (Spring runs from April 1 to June 30) and so on for the other seasons. 
 ![Changepoint analysis 1985](images/changepointanalysis1985.png)
