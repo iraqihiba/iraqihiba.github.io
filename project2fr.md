@@ -82,10 +82,10 @@ En appliquant cette technique aux données de Casablanca-Anfa, on remarque que l
 On insère les données climatiques brutes de la DMN, et le chemin du dossier ou on veut stocker les images dans la fonction automation_of_plots. 
 
 Et voici le résultat : L’analyse à travers les années devient plus facile. 
-![Tracés de edivisive à travers les ans d'une région](https://imgur.com/a/dcl619R)
+![Tracés de edivisive à travers les ans d'une région](images/plotwithedivisive.png)
 Source: Auteur
 Voici un aperçu de l’année 1985. Bleu=Hiver Vert= Printemps Rouge=Eté Orange=Automne (Le printemps débute du 1er avril au 30 Juin) et ainsi de suite pour les autres saisons. 
-![Analyse des points de changements de l'année 1985](https://imgur.com/a/N9bGtpq)
+![Analyse des points de changements de l'année 1985](images/changepointanalysis1985.png)
 On peut faire de même pour le changement de l’allure des précipitations. 
 Ça reste un outil d’aide à l’interprétation des données climatiques et des différentes phases dont passe la température et la précipitation. 
 ### Caractérisation des variables climatiques : température et précipitations  
@@ -98,11 +98,11 @@ Pour atténuer les effets des changements climatiques, la stratégie agricole, e
 ### Programmes de maitrise et de gestion de l’eau d’irrigation 
 L’irrigation a été placée au centre des réformes transversales structurantes visant à faire face à la raréfaction des ressources en eau. Le Plan Maroc Vert a accordé une place de choix à la maîtrise et à la rationalisation de l’eau d’irrigation afin d’améliorer la production et la productivité agricole tout en garantissant une utilisation efficiente et durable des ressources hydriques dans un contexte marqué par les changements climatiques. La politique de maitrise et de gestion de l’eau dans le cadre du Plan Maroc Vert s’articule autour de trois programmes structurants d’irrigation : 
 
-    Le Programme National d’Economie de l’Eau d’Irrigation (PNEEI) : qui vise à l’horizon 2020, le développement de l’irrigation localisée sur une superficie de 550 000ha, afin d’améliorer l’efficience de l’utilisation de l’eau d’irrigation en agriculture, ce qui permettra à terme d’économiser et de valoriser près de 1,4 milliard de m 3 d’eau. A fin 2019, près de 585 000 ha ont été équipés en goutte à goutte, en dépassement de l’objectif de 2020 qui était de 550 000 ha. 
+-Le Programme National d’Economie de l’Eau d’Irrigation (PNEEI) : qui vise à l’horizon 2020, le développement de l’irrigation localisée sur une superficie de 550 000ha, afin d’améliorer l’efficience de l’utilisation de l’eau d’irrigation en agriculture, ce qui permettra à terme d’économiser et de valoriser près de 1,4 milliard de m 3 d’eau. A fin 2019, près de 585 000 ha ont été équipés en goutte à goutte, en dépassement de l’objectif de 2020 qui était de 550 000 ha. 
 
-    Le Programme d’Extension de l’Irrigation (PEI) : a pour objectif la création de nouveaux périmètres et le renforcement de l'irrigation des périmètres existants dominés par les barrages réalisés ou programmés sur une superficie de 130 000 ha, et ce pour remédier à une sous-valorisation de près de 1,2 milliard de m 3 d’eau mobilisée par les barrages destinés à l’irrigation. A fin 2019, près de 82.280 ha sont équipés ou en cours d’équipement dans le cadre de ce programme. 
+-Le Programme d’Extension de l’Irrigation (PEI) : a pour objectif la création de nouveaux périmètres et le renforcement de l'irrigation des périmètres existants dominés par les barrages réalisés ou programmés sur une superficie de 130 000 ha, et ce pour remédier à une sous-valorisation de près de 1,2 milliard de m 3 d’eau mobilisée par les barrages destinés à l’irrigation. A fin 2019, près de 82.280 ha sont équipés ou en cours d’équipement dans le cadre de ce programme. 
 
-    Le Programme du Partenariat Public-Privé (PPP) : dans le domaine de l’irrigation vise à améliorer les conditions techniques, économiques et financières de la gestion du service de l’eau d’irrigation dans les périmètres. Ce programme vise la préservation de la nappe par la mobilisation des eaux non conventionnelles à travers divers projets dont les projets de sauvegarde de l’irrigation et les projets de dessalement de l’eau de mer. A fin 2019, 4 projets de Partenariat Public Privé en irrigation ont été contractés dont deux projets de dessalement de l’eau de mer pour l’irrigation de Chtouka-Ait Baha (15 000 ha) et de Dakhla (5 000 ha). 
+-Le Programme du Partenariat Public-Privé (PPP) : dans le domaine de l’irrigation vise à améliorer les conditions techniques, économiques et financières de la gestion du service de l’eau d’irrigation dans les périmètres. Ce programme vise la préservation de la nappe par la mobilisation des eaux non conventionnelles à travers divers projets dont les projets de sauvegarde de l’irrigation et les projets de dessalement de l’eau de mer. A fin 2019, 4 projets de Partenariat Public Privé en irrigation ont été contractés dont deux projets de dessalement de l’eau de mer pour l’irrigation de Chtouka-Ait Baha (15 000 ha) et de Dakhla (5 000 ha). 
 
 Ces programmes d’irrigation lancés dans le cadre du Plan Maroc Vert ont permis, à fin 2019, d’aménager et moderniser près de 800 000 ha sous irrigation, soit environ 50% de la superficie irriguée au niveau national. L’investissement consenti a été de 36,1 milliards de DH au profit de 235 000 exploitations, ce qui a permis d’économiser et de valoriser annuellement plus de 2 milliards de m 3 d’eau d’irrigation dont 1,6 milliard de m 3 au titre des économies d’eau du PNEEI. La superficie irriguée en goutte à goutte est passée de 9% de la superficie sous irrigation en 2008 à 37% en 2019. 
 ### Programmes de reconversion des céréales et d’intensification de l’arboriculture fruitière 
@@ -112,9 +112,9 @@ En fait, la gestion proactive du changement climatique, notamment la sécheresse
 ### Programme de couverture des risques climatiques 
 Afin de renforcer le système de couverture des risques climatiques, un programme d’assurance multirisque climatique a été développé. Ce programme revêt une grande importance dans un contexte de variabilité climatique puisqu’il permet de passer d’une approche de gestion de la crise à une approche de gestion du risque et contribue ainsi à l’amélioration de la résilience des agriculteurs face aux aléas climatiques liés à la sécheresse, à l’excès d’eau, à la grêle, au gel et aux vents forts et de sable. Dans ce cadre, deux produits d’assurance ont été mis en place : 
 
-    L’assurance multirisque climatique pour les céréales, les légumineuses et les oléagineux : Cette assurance a permis de couvrir des superficies allant de 326 000 ha en 2011-2012 pour atteindre plus d’un million d’hectares à partir de 2016. 
+-L’assurance multirisque climatique pour les céréales, les légumineuses et les oléagineux : Cette assurance a permis de couvrir des superficies allant de 326 000 ha en 2011-2012 pour atteindre plus d’un million d’hectares à partir de 2016. 
 
-    Le programme de garantie multirisque climatique pour l’arboriculture fruitière : mis en place en 2014, contre les principaux aléas climatiques (grêle, excès d’eau, gel, vent violent, hautes températures et chergui). 
+-Le programme de garantie multirisque climatique pour l’arboriculture fruitière : mis en place en 2014, contre les principaux aléas climatiques (grêle, excès d’eau, gel, vent violent, hautes températures et chergui). 
 ### Les programmes de conservation des écosystèmes et de la biodiversité 
 Ces programmes sont menés principalement dans le cadre de la Stratégie de Développement des Zones Oasiennes et de l’Arganier, qui cible le développement de ces zones fragiles sur les dimensions économique, sociale et environnementale, et du Programme National de Développement des Parcours et de Régulation des flux de transhumants qui vise la gestion durable des ressources pastorales, la création de réserves pastorales et la plantation d’arbustes fourragers sur plus de 650 000 ha ainsi que la sécurisation des ressources en eau au niveau de ces zones. Ce programme structurant et les mécanismes prévus par la loi n°113-13 ont contribué à la gestion durable des espaces pastoraux et la régulation des flux de transhumance. 
 ### Plans conjoncturels 
@@ -134,17 +134,17 @@ Ce domaine prioritaire concerne essentiellement : le renforcement des capacités
 
 Actuellement cinq (5) projets qui contribuent à cette deuxième priorité sont en cours : 
 
-    Projet OASIL : « Revitaliser les agroécosystèmes oasiens à travers une approche durable, intégrée et paysagère dans la région de Draâ-Tafilalet (OASIL) » -GCP/MOR/046/GFF 
+-Projet OASIL : « Revitaliser les agroécosystèmes oasiens à travers une approche durable, intégrée et paysagère dans la région de Draâ-Tafilalet (OASIL) » -GCP/MOR/046/GFF 
 
-    Projet « Elimination des pesticides obsolètes et mise en œuvre du programme de gestion des ravageurs et des pesticides au Maroc » -GCP/MOR/041/GFF 
+-Projet « Elimination des pesticides obsolètes et mise en œuvre du programme de gestion des ravageurs et des pesticides au Maroc » -GCP/MOR/041/GFF 
 
-    Projet sous-régional sur « la réutilisation des eaux usées et de drainage à des fins agricoles»-GCP/SNE/3701 
+-Projet sous-régional sur « la réutilisation des eaux usées et de drainage à des fins agricoles»-GCP/SNE/3701 
 
-    Projet « Modernisation de l’irrigation au Maroc » -UTF/MOR/038/MOR 
+-Projet « Modernisation de l’irrigation au Maroc » -UTF/MOR/038/MOR 
 
-    Projet régional “Implementing the 2030 agenda for water efficiency/productivity and water Sustainability in NENA countries” -GCP/RNE/009/SWE 
+-Projet régional “Implementing the 2030 agenda for water efficiency/productivity and water Sustainability in NENA countries” -GCP/RNE/009/SWE 
 
-    Plan territorial de lutte contre le réchauffement climatique, Région Souss Massa 
+-Plan territorial de lutte contre le réchauffement climatique, Région Souss Massa 
 
 Partenaires : Secrétariat d’Etat Eaux, Mines, Développement Durable, Région Souss Massa, GIZ. 
 #### Banque mondiale
