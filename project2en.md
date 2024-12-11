@@ -105,3 +105,46 @@ To combat the effects of climate change in the long term, while improving farmer
 
 In fact, the proactive management of climate change, particularly drought, and the preservation of natural resources are integrated into the design of all the agricultural projects of the Green Morocco Plan, notably through the targeting of land use and the diversification and intensification of agricultural activities. This is likely to improve farmers' incomes, diversify their sources of income and reduce their precariousness and vulnerability to climatic hazards.
 ### Climate risk coverage program 
+In order to strengthen the climate risk coverage system, a multi-risk climate insurance program has been developed. This program is of great importance in a context of climatic variability, since it enables a shift from a crisis management approach to a risk management approach, and thus contributes to improving farmers' resilience in the face of climatic hazards linked to drought, excess water, hail, frost and strong winds and sand. To this end, two insurance products have been introduced: 
+
+Climatic multi-risk insurance for cereals, pulses and oilseeds: This insurance covers areas ranging from 326,000 ha in 2011-2012 to over one million hectares as of 2016. 
+
+The climatic multi-risk guarantee program for fruit growing: set up in 2014, against the main climatic hazards (hail, excess water, frost, strong wind, high temperatures and chergui). 
+### Ecosystem and biodiversity conservation programs 
+These programs are mainly carried out within the framework of the Development Strategy for the Oasis and Argan Zones, which targets the development of these fragile zones in economic, social and environmental terms, and the National Program for the Development of Rangelands and the Regulation of Transhumant Flows, which aims to ensure the sustainable management of pastoral resources, the creation of pastoral reserves and the planting of fodder shrubs over more than 650,000 ha, as well as the securing of water resources in these zones. This structuring program and the mechanisms provided for by law n°113-13 have contributed to the sustainable management of pastoral areas and the regulation of transhumance flows. 
+### Short-term plans 
+#### Program to reduce the impact of the 2023 rainfall deficit 
+This program, designed by the government to reduce the impact of drought and the effects of the economic situation, and to restore balance to production chains, has a budget of around 10 billion dirhams. It has three main components: Protecting animal capital, protecting plant capital and supporting sectors, and strengthening Crédit Agricole's financing capacities”, notes a press release from the head of government. 
+Under the terms of the agreement, a sum of 5 billion DH will be allocated to the protection of animal capital, through the subsidization of barley and imported feedstuffs for livestock and poultry. A total of 4 billion DH will be allocated to protecting plant capital and supporting sectors, by subsidizing the prices of certain inputs, such as seeds and fertilizers, in order to lower production costs for a range of vegetables and fruit. Lastly, 1 billion DH will be allocated to strengthen the financial capacities of the Crédit Agricole bank in order to support farmers. 
+
+In order to reduce the cost of producing a range of staple vegetables, whose prices have risen as a result of higher input costs, notably seeds and fertilizers, the program will subsidize tomato seeds and seedlings to the tune of MAD 1 billion, and certified potato seeds to the tune of MAD 580 million. A budget of 120 million dirhams will be allocated to reducing the cost of onion production by supporting the purchase of seeds, while 2.3 billion dirhams will be allocated to subsidizing fertilizers, the price of which has risen as a result of the current economic situation.    
+### International
+#### FAO
+To guide the partnership and cooperation between the Government of Morocco and the FAO, the FAO Representation in Morocco works within the FAO Country Programming Framework (CPF) for Morocco, which defines the priorities for collaboration and the results to be achieved in the medium term, in support of national development objectives in agriculture, rural development and food security.  
+
+The latest addition to this long-standing cooperation is the 2017-2020 FAO Country Programming Framework for Morocco, for which the second priority area is the sustainable, inclusive and integrated management of natural resources and fragile areas in the face of climate change.  
+This area of priority focuses on strengthening national capacities for the efficiency, productivity and sustainability of water resources, capacity building for the sustainable management of forest resources, knowledge transfer for the revitalization of oasis and argan areas, and their promotion as ingenious systems of world agricultural heritage, participative co-management of watersheds in mountain areas,  technical assistance to national institutions for the safe destruction of obsolete pesticides, national capacity-building for the fight against soil degradation and sustainable land management, and technical support to national institutions for the implementation of the Paris Agreement and the Nationally Determined Contribution under the United Nations Framework Convention on Climate Change (UNFCCC). 
+
+Five (5) projects contributing to this second priority are currently underway: 
+
+OASIL project: “Revitalizing oasis agro-ecosystems through a sustainable, integrated and landscape-based approach in the Draâ-Tafilalet region (OASIL)”. -GCP/MOR/046/GFF 
+
+-Project “Elimination of obsolete pesticides and implementation of the pest and pesticide management program in Morocco” -GCP/MOR/041/GFF 
+
+-Sub-regional project on “Reuse of wastewater and drainage water for agricultural purposes”-GCP/SNE/3701 
+-Project “Modernization of irrigation in Morocco” -UTF/MOR/038/MOR 
+
+-Regional project “Implementing the 2030 agenda for water efficiency/productivity and water Sustainability in NENA countries” -GCP/RNE/009/SWE 
+
+-Territorial plan to combat global warming, Souss Massa Region 
+
+Partners: Secretariat of State for Water, Mines and Sustainable Development, Souss Massa Region, GIZ. 
+#### World Bank
+On June 9, 2023, the World Bank's Board of Directors approved a $350 million loan to support Morocco's measures to combat climate change and improve the country's resilience to the worsening climate impacts already being felt. The Program for Results funding encourages efforts to integrate climate policies within government and strengthen coordination mechanisms to accelerate the climate transition. It complements and reinforces the World Bank's other climate transition commitments and financing in the country at sector level (notably water, agriculture, social protection and health). 
+The new program will help the Moroccan government accelerate the implementation of its Nationally Determined Contributions (NDCs), which underline the Kingdom's commitments to combat global warming by reducing its greenhouse gas emissions, as well as its resolve to strengthen the country's resilience to climate shocks. The program's design builds on recommendations emanating from Morocco's National Climate and Development Report (CCDR) 2022, which identifies a series of guiding principles for urgent action, including the need for a whole-of-government approach, the creation of a robust climate data system to facilitate decision-making, and the absolute necessity of protecting vulnerable groups and ecosystems from climate change. 
+
+ 
+
+The new financing is focused on strengthening institutional and political capacities to integrate climate change into development policies and programs,” said Jesko Hentschel, Country Director for Maghreb and Malta at the World Bank. To achieve this, this funding will help improve policy tools and systems, data management, and the performance of fiscal and financial institutions, while strengthening coordination between agencies and ministries in different sectors.” 
+## Conclusion
+In conclusion, I had the opportunity to explore in depth the impacts of climate change on the agricultural sector. This has enabled me to understand that these impacts are multidimensional, depending on exposure to climatic hazards, the sensitivity of agricultural products and the sector's capacity to adapt. I tried to characterize the evolution of climatic variables. This work has also made me aware of the importance of agricultural and environmental policies, and of innovation in the development of sustainable solutions for agriculture in the face of climate challenges. I would like to express my gratitude to DSS for providing me with this enriching learning opportunity. 
