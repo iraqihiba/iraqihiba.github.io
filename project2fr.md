@@ -24,3 +24,45 @@ La signification statistique d'un point de changement estimé est déterminée p
 Nous obtenons ensuite notre échantillon permuté en permutant les observations dans chacun des segments S1, . . . , Sk. Ensuite, conditionnellement aux emplacements des points de changement précédemment estimés, nous estimons l'emplacement du point de changement suivant dans notre échantillon permuté, ˆτk,r, ainsi que la valeur de la statistique de test qr qui lui est associée. Notre valeur p approximative est alors calculée comme ˆp = #{r : qr ≥ q0}/(R + 1), où R est le nombre total de permutations effectuées 
 ### Caractérisation des variables climatiques : température et précipitations  
 #### Source de données : Crop Growth Monitoring System – Maroc 
+Un système national de suivi de la campagne agricole et de prédiction agro météorologique des récoltes céréalières, appelé « CGMS-MAROC » (Crop Growth Monitoring System – Maroc), a été initié par l’Institut National de la Recherche Agronomique (INRA), dans le cadre du projet E-AGRI. Le CGMS-MAROC est piloté par l’INRA et géré en consortium formel avec la Direction de la Météorologie Nationale (DMN) et la Direction de la Stratégie et des Statistiques (DSS). Le développement de CGMS-MAROC a été possible grâce à une collaboration technologique avec des institutions de recherche internationales, à savoir : l’Institut Flamand pour la Recherche et la Technologie (VITO), le Centre de Recherche Commun de l’Union Européenne (JRC), l’Institut de Recherche de l’Université de Wageningen (Alterra) et l’Université de Milan (UNIMI). Le CGMS-MAROC est ainsi le premier système opérationnel de suivi de la campagne agricole et de prédiction agrométéorologique des récoltes céréalières au Maroc, institutionnalisé par un partenariat stratégique qui permet son développement et sa pérennisation. 
+ 
+Le CGMS-MAROC surveille le développement des cultures, à partir des conditions météorologiques, des caractéristiques des sols et des paramètres des cultures. 
+ 
+Le CGMS-MAROC est constitué de trois niveaux : 
+ 
+Niveau 1 : La collecte des données météorologiques et leur interpolation sur une grille carrée de 9x9 km sur tout le territoire national ; 
+ 
+Niveau 2 : La simulation de la croissance des cultures, par plusieurs modèles de simulations agrométéorologiques ; 
+ 
+Niveau 3 : La prédiction des récoltes à partir d’une approche combinée, mettant à contribution des analyses statistiques paramétriques et non paramétriques des données météorologiques, des données de simulation et des données satellitaires. 
+##### Format des données  
+Observations journalières depuis le 01/01/1980 au 23/09/2023 des températures maximales, minimales, moyennes et une pluviométrie cumulative s'annulant chaque Septembre de chaque région
+#####  Préparation des données 
+-Conversion du format .xls a .csv à l’aide d’Excel 
+
+-Traitement des données et préparation à l’analyse. Les données manquantes sont remplacées par une méthode d’imputation par la dernière observation avec un check sur leur qualité avant et après imputation à l’aide de statistiques de synthèse.  
+##### Analyse et production de graphiques  
+-Désagrégation de la variable pluviométrie pour dégager une pluviométrie journalière 
+
+On opte pour une approche d’analyse qui prend en considération l’aspect saisonnier ainsi : 
+
+Une saison débute du premier du mois et est caractérisée comme suit : Printemps: [Avril,Juin] Eté: [Juillet, Septembre] Automne: [Octobre,Décembre] Hiver: [Janvier,Mars] 
+On génère depuis les températures moyennes journalières une série temporelle annuelle de températures maximales et minimales saisonnières. On utilise pour cela la méthode d’estimation de la densité par noyau pour couper les extrémités de la distribution afin de ne pas inclure les valeurs aberrantes et être le plus fidèle aux conditions réelles de stress thermique. 
+
+Ainsi, on ne s’intéresse qu’aux valeurs qui représentent 95% des variations enregistrées. Et on élimine les queues a droite et a gauche de la distribution a l’aide de la fonction de distribution cumulative. 
+
+De ces intervalles on peut voir comment évolue leur étendue chaque année, est ce que ca augmente ou diminue. Dans le cas ou la température minimale augmente, si l’étendue reste constante, on atteint encore plus de températures chaudes, si l’étendue diminue, peut-etre que l’on n’atteint pas des températures qui sont vraiment chaudes, il faut comparer l’évolution de l’étendue et l’évolution de la température minimale dans ce cas. Si l’étendue augmente, forcément on atteint des températures encore plus chaudes que si l’étendue était constante, et ainsi de suite. 
+
+On génère des graphes de temperature_intervals, range_of_variation, upper_bounds et lower_bounds et précipitations. 
+
+Temperature intervals : Intervalle de variation de températures moyennes 
+
+Range of variation : Une mesure de l’étendue de l’intervalle de variation des températures moyennes  
+
+Upper bounds : Températures maximales atteintes a partir des températures moyennes  
+
+Lower bounds : Températures minimales atteintes a partir des températures moyennes  
+
+Total_rainfall: Précipitations 
+
+On cherche les régions ayant le moins de variabilité en termes d’intervalles de température par saison. On utilise pour cela le coefficient de variation. CV=(Ecart-type /Moyenne​)×100. 
