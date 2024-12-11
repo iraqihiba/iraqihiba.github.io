@@ -77,7 +77,7 @@ Fort heureusement, les résultats de détection au bout d’un an et de deux ans
 Par rapport à la fiabilité : 
 
 En appliquant cette technique aux données de Casablanca-Anfa, on remarque que le nombre de phases dont passe l’évolution des données climatiques reste assez restreinte entre 1985 et 2020.Entre 6 et 8 environ. 2010 est une année aberrante à cause des inondations.
-![Nombre de change points par année](https://imgur.com/a/p3VKig1) Source: Auteur
+![Nombre de change points par année](images//numberofchangepointsperyear.png) Source: Auteur
 #### Fonctionnement outil: données
 On insère les données climatiques brutes de la DMN, et le chemin du dossier ou on veut stocker les images dans la fonction automation_of_plots. 
 
