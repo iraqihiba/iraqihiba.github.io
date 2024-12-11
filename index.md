@@ -4,8 +4,10 @@
 
 ### Latest Projects: 
 
-[**Version française**: Impact des changements climatiques au Maroc, caractérisation temporelle de la température, pluviométrie et du décalage saisonnier](/project2fr)
 [**English version**: Impact of climate change in Morocco, temporal characterization of temperature, rainfall and seasonal lag](/project2en)
+<br>  <br>
+[**Version française**: Impact des changements climatiques au Maroc, caractérisation temporelle de la température, pluviométrie et du décalage saisonnier](/project2fr)
+
 
 [**English version**: Statistical Evaluation of the impact of the type of smile appearing in a fraudster's file on leniency](/project)
 <br> <br>
