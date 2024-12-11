@@ -77,3 +77,15 @@ Fort heureusement, les résultats de détection au bout d’un an et de deux ans
 Par rapport à la fiabilité : 
 
 En appliquant cette technique aux données de Casablanca-Anfa, on remarque que le nombre de phases dont passe l’évolution des données climatiques reste assez restreinte entre 1985 et 2020.Entre 6 et 8 environ. 2010 est une année aberrante à cause des inondations.
+![Nombre de change points par année](https://imgur.com/a/p3VKig1) Source: Auteur
+#### Fonctionnement outil: données
+On insère les données climatiques brutes de la DMN, et le chemin du dossier ou on veut stocker les images dans la fonction automation_of_plots. 
+
+Et voici le résultat : L’analyse à travers les années devient plus facile. 
+![Tracés de edivisive à travers les ans d'une région](https://imgur.com/a/dcl619R)
+Source: Auteur
+Voici un aperçu de l’année 1985. Bleu=Hiver Vert= Printemps Rouge=Eté Orange=Automne (Le printemps débute du 1er avril au 30 Juin) et ainsi de suite pour les autres saisons. 
+![Analyse des points de changements de l'année 1985](https://imgur.com/a/N9bGtpq)
+On peut faire de même pour le changement de l’allure des précipitations. 
+Ça reste un outil d’aide à l’interprétation des données climatiques et des différentes phases dont passe la température et la précipitation. 
+### Caractérisation des variables climatiques : température et précipitations  
