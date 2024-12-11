@@ -4,7 +4,7 @@
 
 ### Latest Projects: 
 
-
+[**Version française**: Impact des changements climatiques au Maroc, caractérisation temporelle de la température, pluviométrie et du décalage saisonnier](/project2fr)
 
 [**English version**: Statistical Evaluation of the impact of the type of smile appearing in a fraudster's file on leniency](/project)
 <br> <br>
