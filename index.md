@@ -8,7 +8,7 @@
 <img src="images/snippet.png?raw=true"/>
 <img src="images/pdfplan.png?raw=true"/>
 
-[**Conversational Day Planner** ](planner.html)  
+[**Conversational Day Planner** 💬🌱](planner.html)  
   An interactive tool that helps you build and download a balanced daily schedule.
   
 [**English version**: Impact of climate change in Morocco, temporal characterization of temperature, rainfall and seasonal lag](/project2en)
