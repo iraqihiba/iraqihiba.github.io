@@ -4,6 +4,9 @@
 
 ### Latest Projects: 
 
+[**AI Day Planner** 🚀](planner.html)  
+  An interactive tool that helps you build and download a balanced daily schedule.
+  
 [**English version**: Impact of climate change in Morocco, temporal characterization of temperature, rainfall and seasonal lag](/project2en)
 <br>  <br>
 [**Version française**: Impact des changements climatiques au Maroc, caractérisation temporelle de la température, pluviométrie et du décalage saisonnier](/project2fr)
