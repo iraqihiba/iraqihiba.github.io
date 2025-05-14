@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Day Planner</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.5;
+            color: #1f2937;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .planner-app {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .app-header {
+            background-color: #4f46e5;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 1rem 1rem 0 0;
+        }
+        .chat-container {
+            padding: 1.5rem;
+            height: 400px;
+            overflow-y: auto;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .message { display: flex; margin-bottom: 1rem; }
+        .message-content { padding: 0.75rem 1rem; border-radius: 1rem; max-width: 80%; }
+        .assistant-message { justify-content: flex-start; }
+        .assistant-message .message-content { background-color: #e9ecef; }
+        .user-message { justify-content: flex-end; }
+        .user-message .message-content { background-color: #4f46e5; color: white; }
+        .option-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .option-btn { background-color: white; border: 1px solid #4f46e5; color: #4f46e5; border-radius: 2rem; padding: 0.5rem 1rem; cursor: pointer; transition: 0.2s; }
+        .option-btn:hover { background-color: #4f46e5; color: white; }
+        .input-container { display: flex; padding: 1rem; gap: 0.5rem; }
+        .input-field { flex: 1; padding: 0.75rem 1rem; border: 1px solid #e5e7eb; border-radius: 1.5rem; outline: none; }
+        .send-btn { width: 2.5rem; height: 2.5rem; border: none; border-radius: 50%; background-color: #4f46e5; color: white; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+        .schedule-container { padding: 1.5rem; background-color: #f8fafc; border-radius: 0.5rem; margin-top: 1rem; }
+        .schedule-header { font-weight: 600; margin-bottom: 1rem; font-size: 1.1rem; }
+        .schedule-item { display: flex; align-items: center; gap: 2.5rem; margin-bottom: 1rem; border-left: 4px solid #4f46e5; padding-left: 1rem; }
+        .time-slot { flex: 0 0 160px; font-weight: 600; }
+        .activity { flex: 1; }
+        .category-tag { display: inline-block; padding: 0.2rem 0.5rem; border-radius: 0.25rem; font-size: 0.8rem; margin-right: 0.75rem; }
+        .tag-work { background-color: #DBEAFE; color: #1E40AF; }
+        .tag-self-care { background-color: #D1FAE5; color: #065F46; }
+        .tag-social { background-color: #FEF3C7; color: #92400E; }
+        .tag-rest { background-color: #FEE2E2; color: #991B1B; }
+        .tag-meal { background-color: #E0E7FF; color: #3730A3; }
+        .restart-btn { background-color: #e9ecef; border: none; border-radius: 0.5rem; padding: 0.5rem 1rem; cursor: pointer; margin-top: 1rem; margin-right: 0.5rem; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="planner-app">
+            <div class="app-header">
+                <h1>Conversational Day Planner</h1>
+                <p>Your personal assistant to plan a balanced, productive day</p>
+            </div>
+            <div id="chatContainer" class="chat-container"></div>
+            <div class="input-container">
+                <input id="userInput" class="input-field" type="text" placeholder="Type your response or select an option above...">
+                <button id="sendBtn" class="send-btn">➤</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatContainer = document.getElementById('chatContainer');
+            const userInput = document.getElementById('userInput');
+            const sendBtn = document.getElementById('sendBtn');
+
+            let currentStep = 'welcome';
+            let dayStart = '';
+            let dayEnd = '';
+            let dayType = '';
+            let priority = '';
+            let freeTime = '';
+            let activities = [];
+            let schedule = [];
+
+            init();
+            sendBtn.addEventListener('click', handleSend);
+            userInput.addEventListener('keypress', e => { if (e.key === 'Enter') handleSend(); });
+
+            function init() {
+                chatContainer.innerHTML = '';
+                currentStep = 'welcome';
+                dayStart = dayEnd = dayType = priority = freeTime = '';
+                activities = [];
+                schedule = [];
+                addAssistantMessage("👋 Hi there! I'm your Day Planner. Let's create a balanced schedule for your day.");
+                setTimeout(askDayTimings, 800);
+            }
+
+            function handleSend() {
+                const text = userInput.value.trim();
+                if (!text) return;
+                addUserMessage(text);
+                userInput.value = '';
+                processInput(text);
+            }
+
+            function processInput(text) {
+                switch (currentStep) {
+                    case 'day-timings': return processDayTimings(text);
+                    case 'day-type':
+                        dayType = text.replace(/^[^a-zA-Z]+/, '');
+                        addAssistantMessage(`A ${dayType.toLowerCase()} day sounds perfect!`);
+                        setTimeout(askPriority, 800);
+                        break;
+                    case 'priority':
+                        priority = text.replace(/^[^a-zA-Z]+/, '');
+                        addAssistantMessage(`Got it! We'll make ${priority.toLowerCase()} your main focus.`);
+                        setTimeout(askFreeTime, 800);
+                        break;
+                    case 'free-time':
+                        freeTime = text.replace(/^[^a-zA-Z0-9]+/, '');
+                        addAssistantMessage(`You have ${freeTime} of free time.`);
+                        setTimeout(askActivities, 800);
+                        break;
+                    case 'activities':
+                        activities = text.split(',').map(i => i.trim());
+                        addAssistantMessage("Excellent! Creating your personalized schedule now...");
+                        setTimeout(generateSchedule, 1500);
+                        break;
+                    case 'schedule-ready':
+                        if (/restart|new plan/i.test(text)) restartPlanner();
+                        else addAssistantMessage("Your day plan is ready! Type 'restart' to start over.");
+                        break;
+                }
+            }
+
+            function processDayTimings(text) {
+                const match = text.match(/(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)\s*(?:to|-)\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm)?)/i);
+                if (match) {
+                    dayStart = match[1]; dayEnd = match[2];
+                    addAssistantMessage(`Great! Planning from ${dayStart} to ${dayEnd}.`);
+                    setTimeout(askDayType, 800);
+                } else {
+                    addAssistantMessage("Please use a format like '8am to 6pm'.");
+                }
+            }
+
+            function askDayTimings() {
+                currentStep = 'day-timings';
+                addAssistantMessage("What time will you start and end your day? (e.g. 8am to 6pm)");
+            }
+
+            function askDayType() {
+                currentStep = 'day-type';
+                addAssistantMessageWithOptions(
+                    'What kind of dayare you hoping for?',
+                    ['🔵 Productive and focused','🟢 Balanced and calm','🟡 Social and connected','🔴 Restful and low-pressure']
+                );
+            }
+
+            function askPriority() {
+                currentStep = 'priority';
+                addAssistantMessageWithOptions(
+                    'What’s your top priority today?',
+                    ['✅ Work project','📚 Learning','🧹 Home admin','🧘 Self-care']
+                );
+            }
+
+            function askFreeTime() {
+                currentStep = 'free-time';
+                addAssistantMessageWithOptions(
+                    'How much free time do you have?',
+                    ['<1 hour','1–3 hours','3–6 hours','>6 hours']
+                );
+            }
+
+            function askActivities() {
+                currentStep = 'activities';
+                addAssistantMessageWithOptions(
+                    'What would you like to include?',
+                    ['Meals & breaks','Exercise','Downtime','Social check-in','Plan review']
+                );
+            }
+
+            function generateSchedule() {
+                const startH = parseHours(dayStart), endH = parseHours(dayEnd);
+                const totalH = ((endH - startH + 24) % 24) || 9;
+                let cursor = startH;
+                schedule = [];
+
+                // Morning routine
+                schedule.push({ start: cursor, end: cursor + 0.5, activity: 'Morning routine', category: 'self-care' });
+                cursor += 0.5;
+
+                // Breakfast if chosen
+                if (activities.includes('Meals & breaks')) {
+                    schedule.push({ start: cursor, end: cursor + 0.5, activity: 'Breakfast', category: 'meal' });
+                    cursor += 0.5;
+                }
+
+                // Morning focus
+                const mDur = Math.min(2.5, (totalH - 1) / 3);
+                schedule.push({ start: cursor, end: cursor + mDur, activity: `Morning focus: ${priority}`, category: 'work' });
+                cursor += mDur;
+
+                // Short break
+                schedule.push({ start: cursor, end: cursor + 0.5, activity: 'Short break', category: 'rest' });
+                cursor += 0.5;
+
+                // Late morning
+                const lmDur = Math.min(2, (totalH - 2) / 3);
+                schedule.push({ start: cursor, end: cursor + lmDur, activity: `Late morning: ${priority}`, category: 'work' });
+                cursor += lmDur;
+
+                // Lunch
+                if (activities.includes('Meals & breaks')) {
+                    schedule.push({ start: cursor, end: cursor + 1, activity: 'Lunch', category: 'meal' });
+                    cursor += 1;
+                }
+                // Exercise
+                if (activities.includes('Exercise')) {
+                    schedule.push({ start: cursor, end: cursor + 1, activity: 'Exercise', category: 'self-care' });
+                    cursor += 1;
+                }
+
+                // Afternoon focus
+                const aDur = Math.min(3, totalH / 4);
+                schedule.push({ start: cursor, end: cursor + aDur, activity: `Afternoon focus: ${priority}`, category: 'work' });
+                cursor += aDur;
+
+                // Social check-in
+                if (activities.includes('Social check-in')) {
+                    schedule.push({ start: cursor, end: cursor + 0.5, activity: 'Social check-in', category: 'social' });
+                    cursor += 0.5;
+                }
+
+                // Dinner
+                if (activities.includes('Meals & breaks')) {
+                    schedule.push({ start: cursor, end: cursor + 1, activity: 'Dinner', category: 'meal' });
+                    cursor += 1;
+                }
+
+                // Evening relaxation limited by freeTime
+                const freeMap = {
+                    '<1 hour': 0.5,
+                    '1–3 hours': 2,
+                    '3–6 hours': 4.5,
+                    '>6 hours': 6
+                };
+                const restDur = freeMap[freeTime] || ((startH + totalH) - cursor);
+                schedule.push({ start: cursor, end: cursor + restDur, activity: 'Evening relaxation', category: 'rest' });
+
+                displaySchedule();
+                currentStep = 'schedule-ready';
+            }
+
+            function displaySchedule() {
+                let html = `<div class="schedule-container"><div class="schedule-header">🗓️ Your ${dayType} Day Plan</div>`;
+                schedule.forEach(item => {
+                    html += `<div class="schedule-item"><div class="time-slot">${formatHours(item.start)} - ${formatHours(item.end)}</div>` +
+                            `<div class="activity"><span class="category-tag tag-${item.category}">${item.category}</span> ${item.activity}</div></div>`;
+                });
+                html += `</div><button id="restartBtn" class="restart-btn">New Plan</button>` +
+                        `<button id="downloadTxtBtn" class="option-btn">Download TXT</button>` +
+                        `<button id="downloadPdfBtn" class="option-btn">Download PDF</button>`;
+                addAssistantMessage(html);
+                document.getElementById('restartBtn').addEventListener('click', init);
+                document.getElementById('downloadTxtBtn').addEventListener('click', downloadTxt);
+                document.getElementById('downloadPdfBtn').addEventListener('click', downloadPdf);
+            }
+
+            function downloadTxt() {
+                let text = `Your Day Plan (from ${dayStart} to ${dayEnd})\n\n`;
+                schedule.forEach(item => text += `${formatHours(item.start)} - ${formatHours(item.end)}: ${item.activity}\n`);
+                const blob = new Blob([text],{type:'text/plain'}); const url = URL.createObjectURL(blob);
+                const a = document.createElement('a'); a.href=url; a.download='day-plan.txt'; a.click(); URL.revokeObjectURL(url);
+            }
+
+            function downloadPdf() {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF({unit:'pt',format:'letter'});
+                const w = doc.internal.pageSize.getWidth(); const h = doc.internal.pageSize.getHeight();
+                doc.setFillColor(79,70,229).rect(0,0,w,60,'F');
+                doc.setFont('helvetica','bold').setFontSize(24).setTextColor('#FFFFFF').text('Your Day Plan',w/2,35,{align:'center'});
+                doc.setFont('helvetica','normal').setFontSize(12).text(`from ${dayStart} to ${dayEnd}`,w/2,50,{align:'center'});
+                let y=80;
+                schedule.forEach(item => {
+                    const colors={work:'#D1D5DB','self-care':'#D1FAE5',rest:'#FEE2E2',social:'#FEF3C7',meal:'#E0E7FF'};
+                    doc.setFillColor(colors[item.category]).rect(40,y-5,w-80,25,'F');
+                    doc.setFont('helvetica','bold').setFontSize(14).setTextColor('#1F2937').text(`${formatHours(item.start)} - ${formatHours(item.end)}`,45,y+13);
+                    doc.setFont('helvetica','normal').setFontSize(12).text(item.activity,200,y+13);
+                    y+=35; if(y>h-40){doc.addPage();y=80;}
+                });
+                doc.setFontSize(10).setTextColor('#9CA3AF').text('Generated by Day Planner. Courtesy of Hiba IRAQI. Care for an internship referral? Contact me at hibairaqi.engi@gmail.com',w/2,h-20,{align:'center'});
+                doc.save('day-plan.pdf');
+            }
+
+            function parseHours(str) { let t=str.toLowerCase().trim(),h=parseInt(t); if(/pm/.test(t)&&h<12)h+=12; return h; }
+            function formatHours(d) { let h=Math.floor(d)%24,m=Math.round((d-Math.floor(d))*60),p=h>=12?'PM':'AM'; h=h%12||12; return `${h}:${m<10?'0'+m:m} ${p}`; }
+            function addAssistantMessage(msg) { const m=document.createElement('div'); m.className='message assistant-message'; const c=document.createElement('div'); c.className='message-content'; c.innerHTML=msg; m.append(c); chatContainer.append(m); chatContainer.scrollTop=chatContainer.scrollHeight; }
+            function addUserMessage(txt) { const m=document.createElement('div'); m.className='message user-message'; const c=document.createElement('div'); c.className='message-content'; c.textContent=txt; m.append(c); chatContainer.append(m); chatContainer.scrollTop=chatContainer.scrollHeight; }
+            function addAssistantMessageWithOptions(text,opts){ addAssistantMessage(text); const btns=document.createElement('div'); btns.className='option-buttons'; opts.forEach(o=>{ const b=document.createElement('button'); b.className='option-btn'; b.textContent=o; b.onclick=()=>{ addUserMessage(o); processInput(o.replace(/^[^a-zA-Z]+/,'')); }; btns.append(b); }); const wrap=document.createElement('div'); wrap.className='message assistant-message'; const cont=document.createElement('div'); cont.className='message-content'; cont.append(btns); wrap.append(cont); chatContainer.append(wrap); chatContainer.scrollTop=chatContainer.scrollHeight; }
+        });
+    </script>
+</body>
+</html>
