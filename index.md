@@ -5,7 +5,7 @@
 ### Latest Projects: 
 
 <img src="images/examplestartpage.png?raw=true"/>
-<img src="pdfplan.png?raw=true"/>
+<img src="images/pdfplan.png?raw=true"/>
 <img src="images/snippet.png?raw=true"/>
 
 [**AI Day Planner** 🚀](planner.html)  
